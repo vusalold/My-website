@@ -1,18 +1,107 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="az">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mənim Saytım</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Awesome Site</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>Salam, Sayitim 👋</h1>
-        <p>Bu mənim Vercel-də yerləşən ilk veb-saytımdır.</p>
-        <button onclick="sayHello()">Mənə Toxun</button>
-        <p id="message"></p>
-    </div>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">✨ MySite</a>
+            <ul class="nav-links">
+                <li><a href="#about">Haqqında</a></li>
+                <li><a href="#services">Xidmətlər</a></li>
+                <li><a href="#contact">Əlaqə</a></li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <h1>Gələcəyi <br /><span>Birlikdə Quraq</span></h1>
+                <p>Müasir, sürətli və gözəl veb-saytlar yaradırıq. Sizin ideyanızı reallaşdırmaq üçün buradayıq.</p>
+                <a href="#contact" class="btn">Əlaqə Keçin</a>
+            </div>
+            <div class="hero-image">
+                <div class="floating-box">🚀</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Haqqımızda</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="icon">💡</div>
+                    <h3>İnnovasiya</h3>
+                    <p>Ən son texnologiyalarla işləyir, müştərilərimizə ən yaxşı həllər təklif edirik.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon">⚡</div>
+                    <h3>Sürət</h3>
+                    <p>Optimallaşdırılmış kod və sürətli serverlərlə saytlarınız bir saniyədən az yüklənir.</p>
+                </div>
+                <div class="about-card">
+                    <div class="icon">🎨</div>
+                    <h3>Dizayn</h3>
+                    <p>İstifadəçi təcrübəsini ön planda tutan, gözəl və funksional dizaynlar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section services-section">
+        <div class="container">
+            <h2 class="section-title">Xidmətlərimiz</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>🌐 Veb Sayt</h3>
+                    <p>Korporativ, portfolio, e-ticarət və s. saytların hazırlanması.</p>
+                </div>
+                <div class="service-card">
+                    <h3>📱 Mobil App</h3>
+                    <p>iOS və Android platformaları üçün tətbiqlərin hazırlanması.</p>
+                </div>
+                <div class="service-card">
+                    <h3>☁️ Bulud Həllər</h3>
+                    <p>Vercel, AWS, Azure kimi bulud platformalarında yerləşdirmə.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Bizimlə Əlaqə</h2>
+            <form id="contactForm" class="contact-form">
+                <input type="text" placeholder="Adınız" id="name" required />
+                <input type="email" placeholder="Email" id="email" required />
+                <textarea placeholder="Mesajınız" id="message" rows="5" required></textarea>
+                <button type="submit" class="btn">Göndər</button>
+                <p id="formMessage" class="form-message"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 MySite. Bütün hüquqlar qorunur.</p>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
